@@ -51,7 +51,7 @@ navigator.mediaDevices.getUserMedia({
 })
 
 socket.on('user-disconnected', userId => {
-    if (peers[userId]) peers[userId].close(); window.location.reload()
+    if (peers[userId]) peers[userId].close(); video.remove()
 })
 
 peer.on('open', id => {
