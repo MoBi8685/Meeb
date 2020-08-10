@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #video-grid {
     display: flex;
@@ -12,6 +13,8 @@ video {
     width: 400px;
     object-fit: cover;
     padding: 8px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 .main {
     height: 100vh;
