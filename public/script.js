@@ -51,7 +51,7 @@ navigator.mediaDevices.getUserMedia({
 })
 
 socket.on('user-disconnected', userId => {
-    if (peers[userId]) peers[userId].close(); connectToNewUser()
+    if (peers[userId]) peers[userId].close();
 })
 
 peer.on('open', id => {
