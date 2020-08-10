@@ -14,7 +14,6 @@ video {
     object-fit: cover;
     padding: 8px;
     flex-shrink: 1;
-    flex-grow: 1;
 }
 .main {
     height: 100vh;
