@@ -20,14 +20,15 @@ video {
     display: flex;
 }
 .main__left {
-    flex: 0.8;
+    flex: 0;
+    background-color: #232324;
+    border-left: 1px solid #3D3D42;
     display: flex;
     flex-direction: column;
+    
 }
 .main__right {
-    flex: 0.2;
-    background-color: #242324;
-    border-left: 1px solid #3D3D42;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }

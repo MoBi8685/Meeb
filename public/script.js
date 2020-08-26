@@ -13,6 +13,8 @@ var peer = new Peer(undefined, {
 let myVideoStream
 const peers = {}
 
+let isChatting = false
+
 navigator.mediaDevices.getUserMedia({
     video: true,
     audio: true
@@ -137,4 +139,16 @@ const setPlayVideo = () => {
 }
 const leave = () => {
     window.location.replace("/")
+}
+const startChat = () => {
+    if ( isChatting == false ) {
+        $(".main__right").css("flex", "0.8");
+        $(".main__left").css("flex", "0.2");
+        isChatting = true;
+        console.log(isChatting.val())
+    } else if ( isChatting == true ) {
+        $(".main__right").css("flex", "1");
+        $(".main__left").css("flex", "0");
+        isChatting = false;
+    }
 }
