@@ -94,7 +94,14 @@ video {
     margin: 5px;
     padding: 2.5px;
 }
-.message h6 {
+.message p {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+.message h5 {
     font-size: small;
 }
 .line {
