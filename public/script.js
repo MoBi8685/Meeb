@@ -142,13 +142,13 @@ const leave = () => {
 }
 const startChat = () => {
     if ( isChatting == false ) {
-        $(".main__right").css("animation", "toggleChatV 1s ease-out reverse");
-        $(".main__left").css("animation", "toggleChatP 1s ease-out reverse");
+        $(".main__right").css("animation", "hideChatV 1s ease-out");
+        $(".main__left").css("animation", "hideChatP 1s ease-out");
         isChatting = true;
         console.log(isChatting.val())
     } else if ( isChatting == true ) {
-        $(".main__right").css("animation", "toggleChatV 1s ease-out");
-        $(".main__left").css("animation", "toggleChatP 1s ease-out");
+        $(".main__right").css("animation", "viewChatV 1s ease-out");
+        $(".main__left").css("animation", "viewChatP 1s ease-out");
         isChatting = false;
     }
 }

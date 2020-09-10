@@ -127,11 +127,15 @@ video {
     color: #F5F5F5;
 }
 
-@keyframes toggleChatP {
-    0% { flex: 0; }
+@keyframes hideChatP {
+    100% { flex: 0; }
+}
+@keyframes hideChatV {
+    100% { flex: 1; }
+}
+@keyframes viewChatP {
     100% { flex: 0.2; }
 }
-@keyframes toggleChatV {
-    0% { flex: 1; }
+@keyframes viewChatV {
     100% { flex: 0.8; }
 }
