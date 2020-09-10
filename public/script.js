@@ -151,6 +151,7 @@ const startChat = () => {
         isChatting = false;
     }
 };
+
 const toggleTheme = () =>{
     $("body").toggleClass("dark")
 }
