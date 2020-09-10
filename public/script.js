@@ -147,8 +147,8 @@ const startChat = () => {
         isChatting = true;
         console.log(isChatting.val())
     } else if ( isChatting == true ) {
-        $(".main__right").css("animation", "toggleChatV 1s ease-out reverse forwards");
-        $(".main__left").css("animation", "toggleChatP 1s ease-out reverse forwards");
+        $(".main__right").css("animation", "toggleChatV 1s ease-out reverse backwards");
+        $(".main__left").css("animation", "toggleChatP 1s ease-out reverse backwards");
         isChatting = false;
     }
 }
