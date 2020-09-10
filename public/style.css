@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    transition: all 1s ease-out;
 }
 #video-grid {
     display: flex;
@@ -25,13 +26,13 @@ video {
     border-left: 1px solid #3D3D42;
     display: flex;
     flex-direction: column;
-    transition: flex 1s ease-out;
+    /* transition: flex 1s ease-out; */
 }
 .main__right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    transition: flex 1s ease-out;
+    /* transition: flex 1s ease-out; */
 }
 .main__videos {
     flex-grow: 1;
