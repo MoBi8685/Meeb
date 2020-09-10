@@ -47,7 +47,7 @@ navigator.mediaDevices.getUserMedia({
         }
     });
     socket.on("createMessage", message => {
-        $("ul").append(`<li class="message"><h5>${message.username}</h5><p>${message.textSent}</p><div class="line"></div></li>`);
+        $("ul").append(`<li class="message"><h6>${message.username}</h6><p>${message.textSent}</p><div class="line"></div></li>`);
         scrollToBottom()
     })
 })
@@ -150,4 +150,7 @@ const startChat = () => {
         $(".main__left").css("flex", "0");
         isChatting = false;
     }
+};
+const toggleTheme = () =>{
+    $("body").toggleClass("dark")
 }
