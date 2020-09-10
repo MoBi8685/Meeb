@@ -3,6 +3,11 @@
     padding: 0;
     overflow: hidden;
     transition: all 1s ease-out;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
 }
 #video-grid {
     display: flex;

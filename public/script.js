@@ -145,7 +145,6 @@ const startChat = () => {
         $(".main__right").css("flex", "0.8");
         $(".main__left").css("flex", "0.2");
         isChatting = true;
-        console.log(isChatting.val())
     } else if ( isChatting == true ) {
         $(".main__right").css("flex", "1");
         $(".main__left").css("flex", "0");
